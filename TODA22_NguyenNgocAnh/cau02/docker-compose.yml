@@ -1,0 +1,8 @@
+version: '3'
+services:
+  python_c:
+    image: python_i
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    

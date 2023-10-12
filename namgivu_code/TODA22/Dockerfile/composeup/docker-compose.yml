@@ -1,0 +1,8 @@
+version: '3'
+services:
+  helloworld_c:
+    build:
+      context:    .
+      #           . of dockerfile is : context_d NOT thisfile-container folder
+      dockerfile: ./Dockerfile
+    image: my_helloworld_i # omit this line 

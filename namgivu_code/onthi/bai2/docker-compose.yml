@@ -1,0 +1,9 @@
+version: '3'
+services:
+  python_c:
+    image: my_python_i
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - name=$name

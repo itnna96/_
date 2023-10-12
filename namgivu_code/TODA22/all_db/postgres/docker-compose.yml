@@ -1,0 +1,26 @@
+version: '3'
+services:
+   postgres_c:
+    image: postgres
+    container_name: postgres_c
+    environment:
+     # POSTGRES_USER: postgres # POSTGRES_USER defautl value is postgres
+
+      POSTGRES_PASSWORD: 123456 # sets the superuser password for POSTGRESQL ref :https://hub.docker.com/_/postgres
+                                # defautl superuser is defined by the POSTGRES_USER environment variable.
+
+    #volume mapping to keep postgres data 
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+    - postgres_v:/var/lib/postgresql/data
+    # volname: path in container tomapto
+    # volname <- docker will mange where-in-local-machine to store the mapped folder -< use docker volume inspect:volname to get detail path
+
+   adminer_c: # GUI web client to view data of :postgres_c
+    image: adminer
+    ports:
+      - 8080:8080
+
+
+volumes:
+ postgres_v:

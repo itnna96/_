@@ -1,0 +1,6 @@
+version: '3'
+services:
+  apache_c:
+    image: httpd
+    ports:
+     - 99:80

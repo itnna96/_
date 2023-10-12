@@ -1,0 +1,11 @@
+version: '3'
+services:
+  apache_c:
+    image: httpd
+    ports:
+     - 98:80
+    container_name: apache_volume_mapping
+    volumes:
+     # . means folder container this .yml file 
+     - ./:/usr/local/apache2/htdocs
+     # Path in local machine as source : Path in container to mapp

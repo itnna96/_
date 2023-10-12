@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mysql_c:
+    image: mysql
+    container_name: mysql_c
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - mysql_v:/var/lib/mysql
+
+  adminer_c:
+    image: adminer
+    ports:
+      - 8000:8080
+volumes:
+  mysql_v:

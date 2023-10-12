@@ -1,0 +1,17 @@
+version: '3.5'
+services:
+  postgres_c:
+    image: postgres:9.6.2
+    container_name: postgres_cc
+    environment:
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - postgres_v:/var/lib/postgresql/data
+  adminer_c:
+    image: adminer
+    ports:
+      - 962:8080
+volumes:
+  postgres_v:
+    name: 961_postgres_v
+    external: true

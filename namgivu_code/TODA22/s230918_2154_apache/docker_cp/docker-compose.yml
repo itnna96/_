@@ -1,0 +1,8 @@
+version: '3'
+services:
+  apache_c:
+    image: httpd
+    ports:
+     - 97:80
+    container_name: apache_bind_mount
+    

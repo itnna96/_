@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  hinodejs_c:
+    image: hinodejs_i
+    volumes:
+      -  /root/_/namgivu_code/docker_basic/dockerfile-assignment-1:/app
+    build:
+      context: /root/_/namgivu_code/docker_basic/dockerfile-assignment-1
+      dockerfile: ./Dockerfile
+    ports:
+      - 21002:3000
