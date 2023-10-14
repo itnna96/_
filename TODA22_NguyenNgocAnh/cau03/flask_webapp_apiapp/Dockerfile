@@ -14,5 +14,5 @@ RUN dos2unix ./flask_apiapp/script/install_package.sh ./flask_apiapp/script/requ
 
 EXPOSE 5000
 
-CMD  ./flask_apiapp/script/install_package.sh ./flask_apiapp/script/require_envvar.sh ; ./flask_apiapp/script/start.sh 
+CMD  ./flask_apiapp/script/install_package.sh ; ./flask_apiapp/script/require_envvar.sh ; ./flask_apiapp/script/start.sh 
 

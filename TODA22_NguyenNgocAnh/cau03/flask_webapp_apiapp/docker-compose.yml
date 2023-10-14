@@ -28,7 +28,7 @@ services:
       context: . #${context}
       dockerfile: ./Dockerfile #${dockerfile}
     ports:
-      - 5000:5000
+      - 555:5000
     restart: always
     environment:
       DB_USER: root

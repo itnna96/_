@@ -1,0 +1,1 @@
+docker exec my_apiapp_c ./flask_apiapp/script/data/add.sh
