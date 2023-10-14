@@ -12,8 +12,8 @@ ensure_envvar_DB_xx_defined()
 Base.metadata.create_all(scoped_engine)  # ref. https://stackoverflow.com/a/70402756/248616
 
 l = [
-    {'name': 'Docker Container',  'fee': '2,500,000₫', 'desc': 'Khóa học trang bị nền tảng kiến thức về container và triển khai ứng dụng theo kiến trúc microservice', },
-    {'name': 'Python for DevOps', 'fee': '5,500,000₫', 'desc': 'Tổng quan: Python hiện đang là 1 trong những ngôn ngữ lập trình phổ biến nhất cho người mới bắt đầu với CNTT nhờ…', },
+    {'name': 'Docker Container',  'fee': '2,500,000₫', 'desc': 'Microservice 2', },
+    {'name': 'Python for DevOps', 'fee': '5,500,000₫', 'desc': 'Tong Quan Python 2', },
 ]
 
 for i,m in enumerate(l):  # m aka model_obj_dict, i aka index

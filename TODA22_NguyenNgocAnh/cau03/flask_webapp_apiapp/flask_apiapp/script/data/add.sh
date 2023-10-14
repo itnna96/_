@@ -1,6 +1,6 @@
 #!/bin/bash
 SH=$(cd `dirname $BASH_SOURCE` && pwd)
-AH=$(cd "$SH/../.." && pwd)
+AH=$(cd "$SH/../.." && pwd) 
 
 cd $AH
     PYTHONPATH=$AH \

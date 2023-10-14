@@ -6,3 +6,5 @@ echo
 #context="$SH/flask_apiapp" \
 #dockerfile="$SH/Dockerfile" \
 docker-compose up --build
+
+
